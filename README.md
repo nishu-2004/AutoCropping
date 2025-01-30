@@ -1,6 +1,4 @@
-Here’s the updated technical description incorporating the multi-frame capture and display functionality:  
 
----
 
  **ROI Bounding Box Visualization for Azure Kinect Camera**  
 
