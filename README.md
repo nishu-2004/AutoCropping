@@ -20,15 +20,19 @@ Where:
 The script performs the following tasks:
 - Captures **four consecutive frames** from the Azure Kinect camera.
 - Reads the vector table containing ROI parameters.
+- Extracts the ROI from the entire Azure Kinect camera image using the coordinates from the vector table.
+- Crops the **driver's face** based on the extracted ROI.
 - Overlays the bounding boxes on both the RGB and IR images.
 - Displays the images using `imshow()` for visualization of the cropping regions before extracting the ROI.
 
 This ensures accurate visualization and validation of the ROI bounding boxes before proceeding with further image processing.
 
 ## Benefits
-- **Improved Object Detection**: Helps mitigate issues faced by YOLOv7 models, such as false detections of passengers instead of the driver.
+- **Improved Object Detection**: Helps mitigate issues faced by YOLOv8 models, such as false detections of passengers instead of the driver.
 - **Optimized Image Processing**: The reduction in image size enhances detection speed and processing efficiency.
 - **Alignment Accuracy**: Ensures correct ROI extraction, leading to better performance in downstream tasks.
+- **Avoids Overloading the Model**: The pre-trained model was not used as it could result in overloading the model.
+- **Better Performance in Low-Light Conditions**: Pre-trained models do not normally work well in bad lighting conditions, making this customized approach more reliable.
 
 This implementation is essential for optimizing object detection models and ensuring accurate region extraction in computer vision applications using the Azure Kinect camera.
 
