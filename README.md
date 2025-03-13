@@ -36,3 +36,6 @@ This ensures accurate visualization and validation of the ROI bounding boxes bef
 
 This implementation is essential for optimizing object detection models and ensuring accurate region extraction in computer vision applications using the Azure Kinect camera.
 
+
+For better understanding, View:https://docs.google.com/document/d/199LaH1SfR3wgzemmAPwQKBlQdhRl5FSLSnRq9PV33n8/edit?usp=sharing
+
